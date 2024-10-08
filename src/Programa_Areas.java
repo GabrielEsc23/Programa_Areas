@@ -19,6 +19,14 @@ public class Programa_Areas{
             resultado=(base*altura)/2;
             System.out.println("El valor del área del triángulo es de: "+resultado);
 
+        } else if (opcion==2) {
+            Scanner entrada=new Scanner(System.in);
+            float lado;
+            System.out.println("Ingrese el valor de uno de los lados del cuadrado: ");
+            lado=entrada.nextFloat();
+            double resultado=  Math.pow(lado,2);
+            System.out.println("El area del cuadrado es de "+ resultado);
+
         }
     }
 }
