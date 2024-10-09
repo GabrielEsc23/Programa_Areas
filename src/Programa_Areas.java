@@ -27,6 +27,13 @@ public class Programa_Areas{
             double resultado=  Math.pow(lado,2);
             System.out.println("El area del cuadrado es de "+ resultado);
 
+        }else if (opcion==3) {
+            Scanner entrada = new Scanner(System.in);
+            double radio;
+            System.out.println("Ingrese el valor del radio del círculo: ");
+            radio = entrada.nextDouble();
+            double area = Math.PI * Math.pow(radio, 2);
+            System.out.println("El área del círculo es de " + area);
         }
     }
 }
