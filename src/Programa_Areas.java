@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Programa_Areas {
     public static void main(String[] args) {
         Scanner numero = new Scanner(System.in);
-        int i = 1;
-        while (i == 1) {
+
+        while (true) {
             System.out.println("----- Programa para calcular áreas ------");
             System.out.println("1.- Área del Triángulo");
             System.out.println("2.- Área del Cuadrado");
