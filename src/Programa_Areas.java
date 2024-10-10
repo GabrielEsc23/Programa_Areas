@@ -3,12 +3,16 @@ import java.util.Scanner;
 public class Programa_Areas{
     public static void main(String[] args){
         Scanner numero=new Scanner(System.in);
-        int opcion;
-        System.out.println("Selecciona una opcion" +
-                "1.Área del Triángulo" +
-                "2.Área del Cuadrado" +
-                "3.Área del Círculo: ");
-         opcion=numero.nextInt();
+        int i = 1;
+        while(i==1){
+        System.out.println("----- Programa para calcular areas ------");
+        System.out.println("1.- Área del Triángulo");
+        System.out.println("2.- Área del Cuadrado");
+        System.out.println("3.- Área del Círculo: ");
+        System.out.println("4.- Salir");
+        System.out.println("Ingrese la opcion que desea realizar: ");
+        int opcion=numero.nextInt();
+        
         if (opcion==1){
             Scanner entrada=new Scanner(System.in);
             float base,altura,resultado;
@@ -19,7 +23,7 @@ public class Programa_Areas{
             resultado=(base*altura)/2;
             System.out.println("El valor del área del triángulo es de: "+resultado);
 
-        } else if (opcion==2) {
+        }else if (opcion==2) {
             Scanner entrada=new Scanner(System.in);
             float lado;
             System.out.println("Ingrese el valor de uno de los lados del cuadrado: ");
@@ -34,6 +38,14 @@ public class Programa_Areas{
             radio = entrada.nextDouble();
             double area = Math.PI * Math.pow(radio, 2);
             System.out.println("El área del círculo es de " + area);
+            
+        }else if (opcion == 4){
+            System.out.println("Muchas gracias por usar nuestro sistema.");
+            break;
+            
+        }else {
+            System.out.println("Opcion no valida, intente de nuevo");
+            }
         }
     }
 }
